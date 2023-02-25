@@ -1,0 +1,14 @@
+export type StringOrNumber = number | string;
+
+export function toString (v: StringOrNumber) {
+ return `${v}`;
+}
+
+
+export function toNumber (v: StringOrNumber) {
+ return Number(v);
+}
+
+export function toggle (v: StringOrNumber) {
+ return typeof v === "number" ? `${v}` : Number(v);
+}
